@@ -1,1 +1,64 @@
 /* Enter your Styles below! */
+
+body {
+	font-family: 'Be Vietnam', sans-serif;
+	color: white;
+	background-image: url(../images/bg_homepage.png);
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: green;
+}
+
+header, main, footer {
+	width: 70%;
+	margin: auto;
+	background-color: black;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 20% 80%;
+}
+
+nav{
+	font-family: 'Yeseva One', cursive;	
+}
+
+nav ul {
+	list-style-type:none;
+	text-align: right;
+	min-height: 100px;
+	padding: 20px;
+}
+
+nav li {
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+main {
+	color: black;
+}
+
+.grid {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+
+.grid-homepg {
+	padding: 20px;
+}
+
+h1 h2 h3 {
+	font-family: 'Yeseva One', cursive;
+}
+
+footer {
+	text-align: right;
+}
