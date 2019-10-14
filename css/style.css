@@ -3,22 +3,32 @@
 body {
 	font-family: 'Be Vietnam', sans-serif;
 	color: white;
-	background-image: url(../images/bg_homepage.png);
 }
+
+	.homepage{
+		background-image: url(../images/bg_homepage.png);
+	}
+
+	.noodles-pg{
+		background-image: url(../images/bg_noodles.png);
+	}
 
 a {
 	text-decoration: none;
 	color: white;
+	font-size: 20px;
 }
 
-a.noodles:hover, a.noodles:active {color: orange;}
+	.noodles-link:hover {color: orange;}
+	.noodles-link:active {color: orange;}
 
 header, main, footer {
-	width: 70%;
-	margin: auto;
 	background-color: black;
 }
 
+.wrapper { background-color: black; width: 70%;
+		margin: 0 auto;
+ }
 header {
 	display: grid;
 	grid-template-columns: 20% 80%;
@@ -33,33 +43,69 @@ nav ul {
 	text-align: right;
 	min-height: 100px;
 	padding: 100px 50px 50px 50px;
+	column-span: 
 }
 
 nav li {
 	display: inline-block;
 	text-transform: uppercase;
-	font-size: 26px;
-	padding-left: 20px;
+	padding-left: 50px;
 }
 
 main {
 	color: black;
 }
 
-.grid {
-  display: inline-grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 50px;
-}
+	.grid-homenav {
+	  display: grid;
+	  grid-template-columns: 1fr 1fr;
+	}
 
-.grid-homepg {
-	padding: 20px;
-}
+	.grid-menu {
+		margin: 0px 35px;
+	}
+	.grid-content {
+	  display: grid;
+	  grid-template-columns:1fr 1fr;
+	  grid-gap: 50px;
+	  margin: 25px 50px 50px 50px;
+	}
 
-h1 h2 h3 {
+	.grid-img-noodles img {
+		border-color:orange;
+		border-style:solid;
+		border-radius: 25px;
+		border-width: 10px;
+		width: 100%;
+	}
+
+	.grid-img-noodles img:nth-child(odd) {
+		margin-right: 20px;}
+
+	.grid-img-noodles img:nth-child(even) {
+		margin-left: 20px;}
+
+
+	.grid-text-bottom div:nth-child(even) {
+		vertical-align: text-bottom;}
+
+h2 {
 	font-family: 'Yeseva One', cursive;
+	font-size: 28px;
+}
+
+	.noodles {
+	color: orange;
+	}
+
+p {
+	color: white;
+	font-size: 14px;
+	line-height: 18px;
+	margin-top: 5px;
 }
 
 footer {
 	text-align: right;
+	padding: 20px;
 }

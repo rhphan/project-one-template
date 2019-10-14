@@ -2,32 +2,77 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Project One - Subpage One</title>
+	<title>Đặc Việt - Special Vietnamese Food</title>
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<!-- This is a special css library that overrides all the ugle default css styles that come with html5 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Be+Vietnam|Yeseva+One&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="noodles-pg">
 	<!-- These semantic tags were added to help you get started but you are very welcome to delete any of them and do your own thing -->
-	<header>
-		<!-- header, h1, logo etc content -->
-		<h1>Your Project Name, or whatever</h1>
-	</header>
-	<nav>
-		<!-- Global naviagtion stuff here, but move this or delete this to your liking. Same goes for the rest -->
-		<ul>
-			<li><a href="#">link</a></li>
-			<li><a href="#">link</a></li>
-			<li><a href="#">link</a></li>
-		</ul>
-	</nav>
-	<main>
-	<!-- Main content here -->
-	</main>
-	<footer>
-		<!-- footer content here -->
-	</footer>
+	<div class="wrapper">
+		<header>
+			<!-- header, h1, logo etc content -->
+			<h1><a href="index.html"><img src="images/logo.png"></a></h1>
+			<nav>
+				<!-- Global naviagtion stuff here, but move this or delete this to your liking. Same goes for the rest -->
+				<ul>
+					<li><a href="noodles.html" class="nav-noodles">Noodles</a></li>
+					<li><a href="rolls.html" class="rolls">Rolls</a></li>
+					<li><a href="fried.html" class="fried">Fried</a></li>
+					<li><a href="dessert.html" class="dessert">Dessert</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<!-- Main content here -->
+			<div class="grid-content">
+				<div class="grid-img-noodles">
+					<img src="images/mi_quang.jpg">
+				</div>
+				<div class="grid-text">
+					<h2 class="noodles">Mì Quảng</h2>
+					<p>Mì Quảng, is a Vietnamese noodle dish that originated from Quảng
+						Nam Province in central Vietnam. In the region, it is one of the
+						most popular and nationally recognized food items.
+						<br>
+						The main ingredients are rice noodles, meat, and herbs, most
+						commonly served with a small amount of broth, which is generally
+						infused with turmeric. Wide rice noodles are placed atop of a
+						bed of fresh herbs in a bowl (or vice versa), and then warm or
+						lukewarm broth and meat are added. The broth is usually strongly
+						flavored and only a small amount of it is used, generally enough
+						to partially cover the vegetables.
+					</p>
+				</div> 	
+				<div class="grid-text-bottom">
+					<h2 class="noodles">Bún Bò</h2>
+					<p>Bún bò originated in Huế, a former capital of Vietnam. Outside
+						the city of Huế and some parts of central Vietnam, it is called bún
+						bò Huế to denote its origin. Within Huế and surrounding cities, it
+						is known simply as bún bò. The broth is prepared by simmering
+						beef bones and beef shank with lemongrass, and then seasoned
+						with fermented shrimp sauce and sugar for taste. Spicy chili oil is
+						added later during the cooking process.
+						<br>
+						Bún bò usually includes thin slices of marinated and boiled beef
+						shank, chunks of oxtail, and pig’s knuckles. It can also include
+						cubes of congealed pig blood, which has a color between dark
+						brown and maroon, and a texture resembling firm tofu.
+					</p>p>
+				</div>
+				<div class="grid-img-noodles">
+					<img src="images/bun_bo.jpg">
+				</div>
+
+			</div>
+		</main>
+		<footer>
+			<!-- footer content here -->
+			<p class="footer">Copyright Rosa Phan 2019.</p>
+		</footer>
+	</div>
 </body>
 </html>
