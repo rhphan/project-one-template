@@ -25,6 +25,16 @@ body {
 		background-image: url(../images/bg_dessert.png);
 	}
 
+header {
+	min-height: 200px;
+}
+
+.logo {
+	padding: 0px 50px;
+	max-height: 200px;
+	width: 100%;
+}
+
 a {
 	text-decoration: none;
 	color: white;
@@ -35,21 +45,21 @@ a {
 	.nav-noodles:active {color: orange;}
 	.nav-rolls:hover {color: teal;}
 	.nav-rolls:active {color: teal;}
-	.nav-fried:hover {color: red;}
-	.nav-fried:active {color: red;}
-	.nav-dessert:hover {color: purple;}
-	.nav-dessert:active {color: purple;}
+	.nav-fried:hover {color: #ee324c;}
+	.nav-fried:active {color: #ee324c;}
+	.nav-dessert:hover {color: #7c48aa;}
+	.nav-dessert:active {color: #7c48aa;}
 
-header, main, footer {
-	background-color: black;
-}
-
-.wrapper { background-color: black; width: 70%;
-		margin: 0 auto;
+.wrapper { 
+	background-color: black; width: 70%;
+	margin: 0 auto;
+	height: 100%;
  }
+
 header {
 	display: grid;
-	grid-template-columns: 20% 80%;
+	grid-template-columns: 30% 70%;
+	padding: 25px 0px;
 }
 
 nav{
@@ -59,9 +69,10 @@ nav{
 nav ul {
 	list-style-type:none;
 	text-align: right;
-	min-height: 100px;
-	padding: 100px 50px 50px 50px;
-	column-span: 
+	padding: 0px 50px;
+	position: relative;
+	top: 25%;
+	line-height: 2em;
 }
 
 nav li {
@@ -74,20 +85,15 @@ main {
 	color: black;
 }
 
-	.grid-homenav {
-	  display: grid;
-	  grid-template-columns: 1fr 1fr;
-	}
-
-	.grid-menu {
-		margin: 0px 35px;
-	}
 	.grid-content {
 	  display: grid;
 	  grid-template-columns:1fr 1fr;
 	  grid-gap: 50px;
-	  margin: 25px 50px 50px 50px;
+	  margin: 0px 50px 50px 50px;
 	}
+
+	.grid-img-home img {width: 100%;}
+
 
 	.grid-img-noodles img {
 		border-color:orange;
@@ -96,17 +102,11 @@ main {
 		border-width: 10px;
 		width: 100%;
 	}
-
-	.grid-img-noodles img:nth-child(odd) {
-		margin-right: 20px;}
-
-	.grid-img-noodles img:nth-child(even) {
-		margin-left: 20px;}
+	.grid-img-noodles img:nth-child(odd) {margin-right: 20px;}
+	.grid-img-noodles img:nth-child(even) {margin-left: 20px;}
 
 
-	.grid-text-bottom {
-		text-align: right;
-	}
+	.grid-text-bottom {text-align: right;}
 
 	.grid-img-rolls img {
 		border-color:teal;
@@ -115,40 +115,30 @@ main {
 		border-width: 10px;
 		width: 100%;
 	}
+	.grid-img-rolls img:nth-child(odd) {margin-right: 20px;}
+	.grid-img-rolls img:nth-child(even) {margin-left: 20px;}
 
-	.grid-img-rolls img:nth-child(odd) {
-		margin-right: 20px;}
-
-	.grid-img-rolls img:nth-child(even) {
-		margin-left: 20px;}
 
 	.grid-img-fried img {
-		border-color:red;
+		border-color:#ee324c;
 		border-style:solid;
 		border-radius: 25px;
 		border-width: 10px;
 		width: 100%;
 	}
+	.grid-img-fried img:nth-child(odd) {margin-right: 20px;}
+	.grid-img-fried img:nth-child(even) {margin-left: 20px;}
 
-	.grid-img-fried img:nth-child(odd) {
-		margin-right: 20px;}
-
-	.grid-img-fried img:nth-child(even) {
-		margin-left: 20px;}
 
 	.grid-img-dessert img {
-		border-color:purple;
+		border-color:#43166b;
 		border-style:solid;
 		border-radius: 25px;
 		border-width: 10px;
 		width: 100%;
 	}
-
-	.grid-img-dessert img:nth-child(odd) {
-		margin-right: 20px;}
-
-	.grid-img-dessert img:nth-child(even) {
-		margin-left: 20px;}
+	.grid-img-dessert img:nth-child(odd) {margin-right: 20px;}
+	.grid-img-dessert img:nth-child(even) {margin-left: 20px;}
 
 
 h2 {
@@ -156,21 +146,13 @@ h2 {
 	font-size: 28px;
 }
 
-	.noodles {
-		color: orange;
-	}
+	.noodles {color: orange;}
 
-	.rolls {
-		color: teal;
-	}
+	.rolls {color: teal;}
 
-	.fried {
-		color: red;
-	}
+	.fried {color: #ee324c;}
 
-	.dessert {
-		color: purple;
-	}
+	.dessert {color: #7c48aa;}
 
 p {
 	color: white;
@@ -181,5 +163,6 @@ p {
 
 footer {
 	text-align: right;
-	padding: 20px;
+	padding: 25px 50px;
+	font-style: italic;
 }
