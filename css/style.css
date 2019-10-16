@@ -13,14 +13,32 @@ body {
 		background-image: url(../images/bg_noodles.png);
 	}
 
+	.rolls-pg{
+		background-image: url(../images/bg_rolls.png);
+	}
+
+	.fried-pg{
+		background-image: url(../images/bg_fried.png);
+	}
+
+	.dessert-pg{
+		background-image: url(../images/bg_dessert.png);
+	}
+
 a {
 	text-decoration: none;
 	color: white;
 	font-size: 20px;
 }
 
-	.noodles-link:hover {color: orange;}
-	.noodles-link:active {color: orange;}
+	.nav-noodles:hover {color: orange;}
+	.nav-noodles:active {color: orange;}
+	.nav-rolls:hover {color: teal;}
+	.nav-rolls:active {color: teal;}
+	.nav-fried:hover {color: red;}
+	.nav-fried:active {color: red;}
+	.nav-dessert:hover {color: purple;}
+	.nav-dessert:active {color: purple;}
 
 header, main, footer {
 	background-color: black;
@@ -86,8 +104,52 @@ main {
 		margin-left: 20px;}
 
 
-	.grid-text-bottom div:nth-child(even) {
-		vertical-align: text-bottom;}
+	.grid-text-bottom {
+		text-align: right;
+	}
+
+	.grid-img-rolls img {
+		border-color:teal;
+		border-style:solid;
+		border-radius: 25px;
+		border-width: 10px;
+		width: 100%;
+	}
+
+	.grid-img-rolls img:nth-child(odd) {
+		margin-right: 20px;}
+
+	.grid-img-rolls img:nth-child(even) {
+		margin-left: 20px;}
+
+	.grid-img-fried img {
+		border-color:red;
+		border-style:solid;
+		border-radius: 25px;
+		border-width: 10px;
+		width: 100%;
+	}
+
+	.grid-img-fried img:nth-child(odd) {
+		margin-right: 20px;}
+
+	.grid-img-fried img:nth-child(even) {
+		margin-left: 20px;}
+
+	.grid-img-dessert img {
+		border-color:purple;
+		border-style:solid;
+		border-radius: 25px;
+		border-width: 10px;
+		width: 100%;
+	}
+
+	.grid-img-dessert img:nth-child(odd) {
+		margin-right: 20px;}
+
+	.grid-img-dessert img:nth-child(even) {
+		margin-left: 20px;}
+
 
 h2 {
 	font-family: 'Yeseva One', cursive;
@@ -95,7 +157,19 @@ h2 {
 }
 
 	.noodles {
-	color: orange;
+		color: orange;
+	}
+
+	.rolls {
+		color: teal;
+	}
+
+	.fried {
+		color: red;
+	}
+
+	.dessert {
+		color: purple;
 	}
 
 p {
